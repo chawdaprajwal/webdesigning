@@ -1,0 +1,23 @@
+h1{
+    color: blueviolet;
+}
+h2{
+    color: aqua;
+}
+
+.odd{
+    color: darkmagenta;
+}
+
+.even{
+    color:deeppink
+}
+
+#spl{
+    color: lawngreen;
+    background-color: beige;
+    transition: 4sec;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: crimson;
+}
