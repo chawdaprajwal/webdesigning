@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sneaker's</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel=''>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"></script>
+  <style>
+    /* CSS Styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+    
+/* Loading Overlay Styles */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.search {
+  flex: 1;
+  text-align: center;
+}
+
+.search form {
+  display: flex;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  width: 200px;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #3062ed;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #666;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #5545e5;
+}
+
+h1 {
+  margin: 0;
+  text-decoration-style: solid;
+}
+
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .shoe-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .shoe-item {
+      background-color: #b4cef5;
+      padding: 20px;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .shoe-item img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    .shoe-item h3 {
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+      </div>
+
+      
+    <header>
+    <div class="logo">
+      <img src="https://image.freepik.com/free-vector/sneaker-shop-logo-mascot-template_190190-199.jpg" alt="Logo">
+    </div>
+    <h1>DOC SHOES </h1>
+    <div class="search">
+        <form action="#" method="get">
+          <input type="text" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-tags"></i> Products</a></li>
+          <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+   
+      <div class="home-sci">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"> <i class='bx bxl-linkedin'></i></a>
+    </div>
+  </header>
+  
+
+  <div class="container">
+    <div class="shoe-list">
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/51y3YtNMV5L._UY695_.jpg" alt="Shoe 1">
+        <a href="https://amzn.eu/d/fJCqxOy">DOC SHOES</a>
+        <h3>Jordan 0.1</h3>
+        <p>64,990</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/61smfbfj6WS._UL1140_.jpg" alt="Shoe 2">
+        <h3>Jordan 1</h3>
+        <a href="https://amzn.eu/d/9wen2ql">DOC SHOES</a>
+        <p>34,899</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/61BNN-LC8LL._UX695_.jpg" alt="Shoe 3">
+        <h3>Jordan 1.0</h3>
+        <a href="https://amzn.eu/d/e8se0jy">DOC SHOES</a>
+        <p>42,999</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/81tTQklw9zS._UY695_.jpg" alt="Shoe 1">
+        <h3>Becca Bucchi 1</h3>
+        <a href="https://amzn.eu/d/6U38eGD">Becca Bucchi</a>
+        <p>1,999</p>
+      </div>
+      <div class="shoe-item"">
+        <img src="https://m.media-amazon.com/images/I/61RpTzI5wsL._UY695_.jpg" alt="Shoe 1">
+        <h3>Becca Bucchi 2</h3>
+        <a href="https://amzn.eu/d/2nLWlhG">Becca Bucchi</a>
+        <p>2,999</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/71qm6U4KQ2L._UY695_.jpg" alt="Shoe 1">
+        <h3>Becca Bucchi 3</h3>
+        <a href="https://amzn.eu/d/d3KxuA3">Becca Bucchi</a>
+        <p>1,499</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/617bombukZL._UY695_.jpg" alt="Shoe 1">
+        <h3>Converse</h3>
+        <a href="shoe-item">Converse</a>
+        <p>6,599</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/71fXr16ZvvL._UY695_.jpg" alt="Shoe 1">
+        <h3>Converse</h3>
+        <a href="https://amzn.eu/d/j1yUc6i">Converse</a>
+        <p>4,599</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/91DA8ZdK4nL._UY695_.jpg" alt="Shoe 1">
+        <h3>Converse</h3>
+        <a href="https://amzn.eu/d/66rqkqe">Converse</a>
+        <p>5,599</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/610yciZUw4L._UY695_.jpg" alt="Shoe 1">
+        <h3>Converse</h3>
+        <a href="https://amzn.eu/d/aT6Qgna">Converse</a>
+        <p>2,400</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/51R-MWBZa4L._UY575_.jpg" alt="Shoe 1">
+        <h3>Boots</h3>
+        <a href="https://amzn.eu/d/7LeVyE0">Womens Boots </a>
+        <p>999</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/81W8ZVloFrL._UY695_.jpg" alt="Shoe 1">
+        <h3>Boots</h3>
+        <a href="https://amzn.eu/d/788cf0M">Men Boots</a>
+        <p>1,500</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/41P1ctwuqHL.jpg" alt="Shoe 1">
+        <h3>Womens Boots</h3>
+        <a href="https://amzn.eu/d/0DpF7R9">Womens Boots</a>
+        <p>799</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/51kjf6eFJ-L._UY695_.jpg" alt="Shoe 1">
+        <h3>Ankle sneak Adidas</h3>
+        <a href="https://amzn.eu/d/1dHGCLI">Ankle sneak</a>
+        <p>3,499</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/8160ZU27xcL._UX695_.jpg" alt="Shoe 1">
+        <h3>Puma Sneak</h3>
+        <a href="https://amzn.eu/d/1WWf2jc">sneak</a>
+        <p>3,499</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/51e48JV2GfL._UY695_.jpg" alt="Shoe 1">
+        <h3>Spaarks</h3>
+        <a href="https://amzn.eu/d/0NfwZxa">Ankle Sneak</a>
+        <p></p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/61oBDfc7K1L._UX695_.jpg" alt="Shoe 1">
+        <h3>Slides</h3>
+        <a href="https://amzn.eu/d/00Sw5lQ">Nike Slides</a>
+        <p>2,299</p>
+      </div>
+      <div class="shoe-item">
+        <img src="https://m.media-amazon.com/images/I/61CsX6VmawL._UX695_.jpg" alt="Shoe 1">
+        <h3>Slides</h3>
+        <a href="https://amzn.eu/d/3iAdhXK">Nike Slides</a>
+        <p>1,699</p>
+      </div>
+      <!-- Add more shoe items here -->
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Shoes Shopping By Doc Sneakers. All rights reserved.</p>
+  </footer>
+  <script>
+    window.addEventListener("load", function() {
+      const overlay = document.getElementById("loading-overlay");
+      overlay.style.display = "none";
+    });
+  </script>
+
+<div class="home-sci">
+    <a href="#"><i class='bx bxl-facebook'></i></a>
+    <a href="#"><i class='bx bxl-twitter' ></i></a>
+    <a href="#"> <i class='bx bxl-linkedin'></i></a>
+</div>
+</body>
+</html>
